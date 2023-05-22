@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" >
+        {%csrf_token %}
+            <table>
+                <tr>
+                    <td>IP address :    {{info.ip}}</td>
+                </tr>
+                 <tr>
+                    <td>Organization :  {{org}}</td>
+                </tr>
+                 <tr>
+                    <td>OS :    {{os}}</td>
+                </tr>
+                 <tr>
+                    <td>Country :   {{country}}</td>
+                </tr>
+                <tr>
+                    <td>City :  {{city}}</td>
+                </tr>
+        
+            </table>
+
+    </form>
+        
+</body>
+</html>
